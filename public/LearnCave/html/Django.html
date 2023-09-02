@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Cave</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaQueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <img src="./Images/logo-svg.svg" alt="T Course Logo" class="logo navigatingLinks" data-val="Home"> -->
+            <h1 style="color:white;">Learn Cave</h1>
+            <i class="fa-solid fa-bars" id="humburger"></i>
+            <!-- <ul id="navSlide">
+                <li class="navigatingLinks" data-val="Home">Home</li>
+                <li class="navigatingLinks" data-val="Courses">Courses</li>
+                <li class="navigatingLinks" data-val="Pricing">Pricing</li>
+                <li class="navigatingLinks" data-val="About">About</li>
+                <li class="navigatingLinks" data-val="Contact">Contact</li>
+            </ul> -->
+        </nav>
+    </header>
+    <section class="homeContainer maxWidthAll marginAuto" id="Home">
+        <div class="textBoxHome">
+            <h1 class="bigText">Learn your <span>Impossibilities</span> with <br> Learn Cave</h1>
+            <p class="smallText">Learn Cave provides you best and easy learning tutorials, projects from scratch and developing programming skills from basics with user friendly lessons, Learning is only hard untill you are BEGINNER!
+            </p>
+            <!-- <button class="button_1">Try For Free!</button> -->
+        </div>
+        <div class="imgBoxHome">
+            <img src="./Images/hero.svg" alt="Hero">
+        </div>
+    </section>
+    <section class="codeFestContainer maxWidthAll marginAuto reveal">
+        <img src="./Images/winnerCup.svg" alt="winning Cup">
+        <p class="normalText">We provide Co-Curricular events for college students can explore our knowledges to outside of campus <br> <span> By Learn Cave Team</span></p>
+    </section>
+    <section class="courseSection maxWidthAll marginAuto reveal" id="Courses">
+        <h1 class="mainHeading bigText">Django</h1>
+        <h3 class="sub-heading">
+            <b>Introduction</b>
+        </h3>
+        <div class="para">
+
+        
+        <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Django makes it easier to build better web apps quickly and with less code.</p>
+        <h3 class="sub-headding">
+            Django – Design Philosophies
+        </h3>
+        <p>Django comes with the following design philosophies </p>
+        <ul>
+            <li><b>Loosely Coupled</b><p>Django aims to make each element of its stack independent of the others.</p></li>
+            <li><b>Less Coding </b><p>Less code so in turn a quick development.</p></li>
+            <li><b>Don't Repeat Yourself (DRY) </b><p>Django aims to make each element of its stack independent of the others.</p></li>
+            <li><b>Fast Development</b><p>Django's philosophy is to do all it can to facilitate hyper-fast development.</p></li>
+            <li><b>Clean Design</b><p>Django strictly maintains a clean design throughout its own code and makes it easy to follow best web-development practices.</p></li>
+            
+            
+        </ul>
+        <h3 class="sub-heading">
+            Overview
+        </h3>
+        <p>As you already know, Django is a Python web framework. And like most modern framework, Django supports the MVC pattern. First let's see what is the Model-View-Controller (MVC) pattern, and then we will look at Django’s specificity for the Model-View-Template (MVT) pattern.</p>
+        <h3 class="sub-heading">
+            MVC Pattern
+        </h3>
+        <p>When talking about applications that provides UI (web or desktop), we usually talk about MVC architecture. And as the name suggests, MVC pattern is based on three components: Model, View, and Controller. Check our MVC tutorial here to know more.</p>
+        <h3 class="sub-heading">
+            DJANGO MVC - MVT Pattern
+        </h3>
+        <p>The Model-View-Template (MVT) is slightly different from MVC. In fact the main difference between the two patterns is that Django itself takes care of the Controller part (Software Code that controls the interactions between the Model and View), leaving us with the template. The template is a HTML file mixed with Django Template Language (DTL).</p>
+        <h3 class="sub-heading">
+            Creating Views
+        </h3>
+        <p>A view function, or “view” for short, is simply a Python function that takes a web request and returns a web response. This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image, etc. Example: You use view to create web pages, note that you need to associate a view to a URL to see it as a web page.</p>
+        <p>In Django, views have to be created in the app views.py file.</p>
+        <h3 class="sub-heading">
+            Simple view
+        </h3>
+        <p>We will create a simple view in myapp to say "welcome to my app!"</p>
+        <h3 class="sub-heading">
+                Snippet here
+        </h3>
+        <span style="color: red;">
+            from django.http import HttpResponse<br>
+
+def hello(request):<br>
+   text = """<h1>welcome to my app !</h1>"""<br>
+   return HttpResponse(text)
+        </span>
+        <p>In this view, we use HttpResponse to render the HTML (as you have probably noticed we have the HTML hard coded in the view). To see this view as a page we just need to map it to a URL (this will be discussed in an upcoming chapter).</p>
+<p>We used HttpResponse to render the HTML in the view before. This is not the best way to render pages. Django supports the MVT pattern so to make the precedent view, Django - MVT like, we will need −</p>
+<p>A template: myapp/templates/hello.html</p>
+<span style="color:red">from django.shortcuts import render<br>
+
+    def hello(request): <br>
+       return render(request, "myapp/template/hello.html", {})</span>
+<p>Views can also accept parameters −</p>
+<span style="color: red;">
+    from django.http import HttpResponse <br>
+    def hello(request, number): <br>
+       text = "welcome to my app number %s!"% number <br>
+       return HttpResponse(text)</span>
+
+
+
+           
+        </div>
+    <button class="button_1" onclick="more()">MORE</button>
+    <script>
+        function more()
+        {
+            window.location.href = "https://www.mygreatlearning.com/django/free-courses"
+        }
+    </script>
+        <section class="about_us maxWidthAll marginAuto reveal" id="About">
+        <h1 class="mainHeading bigText">About Us</h1>
+        <div class="aboutContainer">
+            <img src="./Images/UserInterface.svg" alt="About Us">
+            <p class="normalText">Learn Cave helps you to get close to your dreams of Programming world. Learn Cave is one of the best online coding Learning platform for programmers in whole wide world. Beginner's who want to learn Coding and Programming are too joining us. We have around <br> With our comprehensive course curriculum, you will cover all cutting edge topics. Learn Cave has it's own brand, with TAG of <span>Asia's Biggest Online Coding Course</span>. With the evolution of computers programming languages, Learn Cave is also contributing in this evolution by provind paid courses of Programming Languages such as Python, Javascript, C++, Java, Angular and more. We help students to fast-track your career in this evolving programming field.</p>
+        </div>
+    </section>
+   
+
+    </section>
+    <section class="faq maxWidthAll marginAuto reveal">
+        <h1 class="mainHeading bigText">FAQ</h1>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>Will Learn Cave provide course for freshers in programming?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Yes, our courses are too friendly to get understood easily for freshies in programming.</p>
+            </div>
+        </div>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>How can I join codefest of Learn Cave?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Subscribe our Learn Cave Youtube to get instant updates of codefest. You can also join Our Discord Server for more information.</p>
+            </div>
+        </div>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>Why should I choose Learn Cave when other platforms provide course in less amount?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Learn Cave provides you 24/7 Guidence in programming courses. Users get free source code of many websites for Professional/Advance Learning.
+                </p>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="maxWidthAll marginAuto">
+        <div class="footerContainer">
+            <div class="footerDiv">
+        <a href="#" style="color: white;text-decoration: none;font-size: 30px;">Learn Cave</a>
+                <p class="smallText">Learn Cave helps you to get close to your dreams of programming world. Learn Cave is one of the best online coding Learning/Competition platform for programmers in whole wide world. Beginner's who want to learn coding and programming are too joining us.</p>
+            </div>
+            <!-- <div class="footerDiv navigatingFooterLinks">
+                <p class="regularText navigatingLinks" data-val="Courses">Courses</p>
+                <p class="regularText navigatingLinks" data-val="Pricing">Pricing</p>
+                <p class="regularText navigatingLinks" data-val="About">About Us</p>
+                <p class="regularText navigatingLinks" data-val="Contact">Contact</p>
+            </div> -->
+            <!-- <div class="footerDiv">
+                <div class="socialLinks">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <p class="regularText">Follow Us On</p> -->
+            </div>
+        </div>
+    </footer>
+    <div class="copyRight">
+        <p class="smallText">&#169; Created By Learn Cave 2023</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

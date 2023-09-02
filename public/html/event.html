@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang=en class=no-js>
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <title>Learn Cave</title>
+    <meta name=description content="College 2015 Web Page ">
+    <meta name=keywords content="College, CS FEST, VASAVI, CSE">
+    <meta name=author content=little_bit_all>
+    <link rel="shortcut icon" href=img/logo.png>
+    <style type=text/css>
+    #loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -128px;
+        margin-left: -128px;
+        width: 256px;
+        line-height: 256px;
+        height: 256px;
+        font-size: 25px;
+        color: #000;
+        background-color: #fff;
+        background-image: url(img/loading.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center
+    }
+    </style>
+    <link rel=stylesheet href=css/bootstrap.min.css>
+    <link rel=stylesheet href=css/style.css>
+    <link rel=stylesheet type=text/css href=css/default.css>
+    <link rel=stylesheet type=text/css href=css/component.css>
+    <link rel=stylesheet type=text/css href=css/animations.css>
+    <link rel=stylesheet type=text/css href=css/font-awesome.min.css>
+    <link rel=stylesheet type=text/css href=css/jquery.fancybox.css>
+    <script src=js/modernizr.custom.js type=text/javascript></script>
+
+    <body>
+        <div id=loading>0%</div>
+        <header id=navigation class="navbar-fixed-top navbar">
+            <div class=container>
+                <div class=navbar-header id=naving>
+                    <button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse><span class=sr-only>Toggle navigation</span> <i class="fa fa-bars fa-2x"></i>
+                    </button> <a class=navbar-brand href=# onclick=pageTransition(0,-1)><h1 id=logo><img src=img/logo.png alt=logl width=40><span style="font-family:Comic Sans MS;font-size:35px"></span>Learn Cave<span style="font-size:14px;margin-top:-20px;padding-bottom:20px;font-family:Lucida Console"></h1></a>
+                </div>
+                <nav class="collapse navbar-collapse navbar-right" role=navigation>
+                    <ul id=nav class="nav navbar-nav">
+                        <!-- <li><a href=# onclick=pageTransition(2,36)>Contact</a>
+                        </li> -->
+                        <li><a href=# onclick=pageTransition(3,-1) class="register">Technical Events</a>
+                        </li>
+                        <li><a href=# onclick=pageTransition(5,-1) class="register">Non-Technical Events</a>
+                        </li>
+                        <!-- <li><a href=# onclick=pageTransition(35,-1)>Sponsors</a>
+                        </li> -->
+                        <!-- <li><a href=# onclick=pageTransition(4,-1)>Register</a>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id=pt-main class=pt-perspective>
+            <div class="pt-page pt-page-0" style=background-image:url(img/b-a.png);padding-bottom:0;overflow-x:none>
+                <div class=contains id=firstpage>
+                    <div id=home class=home>
+                        <div class=text-vcenter>
+                            <ul>
+                                <li>
+                                    <div class=g-plusone data-annotation=inline data-width=300 data-href="https:/plus.google.com/118002977867319053964/"></div>
+                                </li>
+                                <!-- <li>
+                                    <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FCollegeCsfest2k15&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=806763409341507" scrolling=no frameborder=0 style=border:none;overflow:hidden;height:21px allowtransparency=true></iframe>
+                                </li>
+                                <li><a href="https://twitter.com/intent/tweet?button_hashtag=CollegeCSfest2k15" class=twitter-hashtag-button>Tweet #CollegeCSfest</a> -->
+                                    <script>
+                                    ! function(t, n, e) {
+                                        var i, o = t.getElementsByTagName(n)[0],
+                                            a = /^http:/.test(t.location) ? "http" : "https";
+                                        t.getElementById(e) || (i = t.createElement(n), i.id = e, i.src = a + "://platform.twitter.com/widgets.js", o.parentNode.insertBefore(i, o))
+                                    }(document, "script", "twitter-wjs");
+                                    </script>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script type=text/javascript>
+                    ! function() {
+                        var t = document.createElement("script");
+                        t.type = "text/javascript", t.async = !0, t.src = "https:/apis.google.com/js/platform.js";
+                        var e = document.getElementsByTagName("script")[0];
+                        e.parentNode.insertBefore(t, e)
+                    }();
+                    </script>
+                    <!-- <div id=about class=pad-section>
+                        <div class=container>
+                            <div class=row>
+                                <div class=col-sm-6>
+                                    <iframe width=440 height=270 src=https://www.youtube.com/watch?v=yHLrM4H44uc style=margin-top:80px frameborder=0 allowfullscreen></iframe>
+                                </div>
+                                <div class="col-sm-6 text-center" style=color:#000;text-align:justify>
+                                    <div class=about>
+                                        <h1>College - National Symposium</h1>
+                                        <p>The pace of progress in the field of Science & Technology in this millennium has overshadowed the speed of Technological changes in the past decades. Technical Symposiums like College are an effort to catch up with the pace of technological innovation.</p>
+                                        <p>College is a technical festival. The event seeks to achieve communication of innovative ideas that promote the cause of the technological advantage among the students and also to keep them abreast with the latest advances in their respective fields. It also opens a window to the participants to interact with people from different backgrounds and upgrade their knowledge.</p>
+                                        <p>The theme "YOUTH-TECHNOLOGY-FUTURE" asserts the fact that the future of technology lies in the hands of the youth. This is the time for the students to draw out their talents in the areas related to academic routine.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div id=information class=pad-section style=margin-top:20px>
+                        <div class=container>
+                            <div class=col-sm-6 style=float:right;margin-top:35px>
+                                <div class="panel panel-default">
+                                    <div class=panel-heading>
+                                        <h2 class=panel-title>Updates</h2>
+                                    </div>
+                                    <div class="panel-body lead">
+                                        <ul>               
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="pt-page pt-page-1" style=background-image:url(img/b-a.png)></div>
+            <div class="pt-page pt-page-2" style=background-image:url(img/b-c.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <div class=contacts style=color:#000>
+                        <h1>Contacts</h1>
+                        <div id=table-list>
+                            <table cellspacing=20 style="border-collapse:separate;border-spacing:0 20px">
+                                <tr>
+                                    <td class=imp>ADDRESS
+                                        <td class=details>
+                                            Trichengode,Tamilnadu
+                                            <tr>
+                                                <td class=imp>CONTACT
+                                                    <td class=details>
+                                                        <h4><b>+91 8220089955</b></h4>
+                                                        <br>
+                                                        <h4><b>+91 9600723609</b></h4>
+                                                        <br>
+                                                        <h4><b>+91 7010514170</b></h4>
+                                                        <br>
+                                                        <h4><b>+91 6374274424</b></h4>
+                                                        <br>
+                                                        <tr>
+                                                            <td class=imp>EMAIL
+                                                                <td class=details>Email us at - <b>nandha8987@gamil.com</b>
+                                                                    
+                            </table>
+                        </div>
+                    </div>
+                    <!-- <div class=c-map>
+                        <div class=col-md-5>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.82610661964!2d78.38269171871812!3d17.38046038482994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb942a230c2425%3A0xe4bfd802564aecf6!2sVasavi+Engineering+College%2C+9-5-81%2C+Ibrahimbagh%2C+Golkonda%2C+Hyderabad%2C+Andhra+Pradesh+500031!5e0!3m2!1sen!2sin!4v1387305921789" width=450 height=337 frameborder=0 style=border:0></iframe>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="pt-page pt-page-3" style=background-image:url(img/b-te.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <ul class=ch-grid>
+                        <li>
+                            <div class=ch-item style=background-image:url(img/l-opc.png);height:220px;width:220px>
+                                <div class=ch-info><a href=# onclick=pageTransition(6,-1)><h3>Online Programing Contest</h3></a>
+                                    <p>The Only Thing we Know : CODING</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class=ch-item style=background-image:url(img/l-oth.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(8,-1)><h3>Debugging</h3></a>
+                                    <p>Work like a captain, play like a pirate.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class=ch-item style=background-image:url(img/l-pe.jpg)>
+                                <div class=ch-info><a href=# onclick=pageTransition(10,-1)><h3>Project Expo</h3></a>
+                                    <p>Look what I've Done :</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-ppt.jpg)>
+                                <div class=ch-info><a href=# onclick=pageTransition(12,-1)><h3>Paper <span style=margin-left:-14px>Presentation</span></h3></a>
+                                    <p>Only on paper has humanity yet achieved glory, truth, knowledge, virtue and abiding love.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-cdehunt.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(14,-1)><h3>Programming</h3></a>
+                                    <p>we are the hunters they are the prey</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-fin.jpg)>
+                                <div class=ch-info><a href=# onclick=pageTransition(16,-1)><h3>Workshops</h3></a>
+                                    <p>It is not in the stars to hold our destiny but in ourselves.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-pd.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(18,-1)><h3>Poster <span style=margin-left:-14px>Presentation</span></h3></a>
+                                    <p>Love Creativity ??</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-geek.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(20,-1)><h3>Quiz</h3></a>
+                                    <p>This is a war!! with no blood Shed.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-eng.jpg)>
+                                <div class=ch-info><a href=# onclick=pageTransition(22,-1)><h3>CAD Designing</h3></a>
+                                    <p>A network of gadgets!!</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-page pt-page-4" style=background-image:url(img/b-s.jpg)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains style=color:b;margin-left:20px;padding:20px>
+                    <div class=container-fluid>
+                        <p>(Please don't forget to bring College CSFest ticket on the day of the event)</p>
+                        <form id=regform target=_blank action=http://prataprajs.hostei.com/phpqrcode/acu.php method=post>
+                            <div class=from-group style=float:left>
+                                <h3>Your Information:</h3>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input class=form-control placeholder=*Name name=name>
+                                            <tr>
+                                                <td>
+                                                    <input class=form-control placeholder=*College name=col>
+                                                    <tr>
+                                                        <td>
+                                                            <input class=form-control placeholder=*Branch name=branch>
+                                                            <tr>
+                                                                <td>
+                                                                    <input class=form-control placeholder=*email name=email>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input class=form-control placeholder="*Phone (9999999999)" name=pnum>
+                                </table>
+                            </div>
+                            <div class=form-group style=float:left;margin-left:40px>
+                                <h3>Events you want to register:</h3>
+                                <table>
+                                    <tr>
+                                        <th>*Technical
+                                            <tr>
+                                                <td>
+                                                    <div>
+                                                        <label>
+                                                            <input type=checkbox name=1> Online Programing Contest</label>
+                                                    </div>
+                                                    <tr>
+                                                        <td>
+                                                            <div>
+                                                                <label>
+                                                                    <input type=checkbox name=2> Debbuging</label>
+                                                            </div>
+                                                            <tr>
+                                                                <td>
+                                                                    <div>
+                                                                        <label>
+                                                                            <input type=checkbox name=3> Project Expo</label>
+                                                                    </div>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div>
+                                                                                <label>
+                                                                                    <input type=checkbox name=4> Paper Presentation</label>
+                                                                            </div>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <div>
+                                                                                        <label>
+                                                                                            <input type=checkbox name=5> Programming</label>
+                                                                                    </div>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <div>
+                                                                                                <label>
+                                                                                                    <input type=checkbox name=6> Workshop </label>
+                                                                                            </div>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <div>
+                                                                                                        <label>
+                                                                                                            <input type=checkbox name=7> Poster Presentation</label>
+                                                                                                    </div>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div>
+                                                                                                                <label>
+                                                                                                                    <input type=checkbox name=8>Quiz</label>
+                                                                                                            </div>
+                                                                                                            <tr>
+                                                                                                                <td>
+                                                                                                                    <div>
+                                                                                                                        <label>
+                                                                                                                            <input type=checkbox name=9> CAD Designing</label>
+                                                                                                                    </div>
+                                                                                                                    <button id=register type=submit class="btn btn-primary" style=margin-left:20px;margin-top:50px;float:right>Register</button>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-page pt-page-5" style=background-image:url(img/b-nte.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <ul class=ch-grid id="non">
+                        <li>
+                            <div class="ch-item ch-img-1" style=background-image:url(img/l-tnt.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(24,-1)><h3>LAN Gaming</h3></a>
+                                    <p>There is no boredom in anything that has tech!!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-koc.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(25,-1)><h3>GRAFFITI</h3></a>
+                                    <p>Majestic Royalty</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-3" style=background-image:url(img/l-qui.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(26,-1)><h3>PAINT BALL</h3></a>
+                                    <p>The Clock is ticking...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-who.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(27,-1)><h3>PHOTOGRAPHY</h3></a>
+                                    <p>Give me a form!!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-spy.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(28,-1)><h3>SHORT</h3></a>
+                                    <p>Find me..I am hidden here!!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-wro.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(29,-1)><h3>Wrong Turn</h3></a>
+                                    <p>Take a wrong train and reach your destination!!</p>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-smrt.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(30,-1)><h3>Smart Droid</h3></a>
+                                    <p>It's all Andriod</p>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-cpu.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(31,-1)><h3>CPU Assembly</h3></a>
+                                    <p>Wonder..how to fix it up?</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-key.png)>
+                                <div class=ch-info><a href=# onclick=pageTransition(32,-1)><h3>Keyboard Assembly</h3></a>
+                                    <p>Remember..what fits where?</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-gue.jpg)>
+                                <div class=ch-info><a href=# onclick=pageTransition(33,-1)><h3>Guess Who</h3></a>
+                                    <p>know him? know it?</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="ch-item ch-img-2" style=background-image:url(img/l-its.jpg)>
+                                <div class=ch-info><a href=# onclick=pageTransition(34,-1)><h3>It’s Appening</h3></a>
+                                    <p>Stay focused..they wont stay long for you to see</p>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-page pt-page-6" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Online Programing Contest</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>An online programming contest is pleasurable for a budding programmer. It is a delightful playground where programmers can explore their intelligence. “It is not the place for the frightened lizards but for the Programming Wizards.” It provides the perfect platform for all the programmers to showcase their skills. Get down on the battle ground and claim the right of being the "Best Programmer".</p>
+                        <p style=padding-top:30px><span>First Round :</span> <span>Online at</span><b><br><span id=alink><a href="https://www.hackerrank.com/competitions/dtcc-coding-contest" target=_blank>https://www.hackerrank.com/competitions/dtcc-coding-contest</a></span></b>
+                           
+                            <br><button type=button class="btn btn-info" onclick=pageTransition(7,3)>Details</button>
+                        </p>
+                    </div>
+                    <div class=event-img><img src=img/b-opc.png alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow btm-rht"><a href=# onclick=pageTransition(7,3)><span class="fa fa-arrow-circle-down fa-3x"></span></a>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(8,1)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(22,2)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-7" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Online Programing Contest Details</h1>
+                    <div class=event-intro style=color:#000>
+                        <h1>The Rules</h1>
+                        <p><b>Competion Duration:</b>120 Minutes</p>
+                        <p><b>Number of Questions:</b> 4 Questions</p>
+                        <p>1. This contest is for individuals; teams are not allowed.<br>
+
+                            2. Any competitor found cheating will be disqualified and banned from future coding contests.
+                            <br>
+                            3. By participating and selecting "I agree to share my contest results and profile information with sponsor companies," you are granting HackerRank permission to share your contest results with DTCC.
+                            <br>
+                            4. By participating and selecting "I'm interested in new job opportunities", you are indicating that you are willing to be considered for employment by DTCC.
+                            <br>
+                            5. Residents of the following countries and territories are not eligible to participate or win prizes due to legal restrictions: Antarctica, Afghanistan, Bangladesh, Belarus, Bouvet Island, British Indian Ocean Territory, Burundi, Cameroon, Central African Republic, Christmas Island, Cote D'ivoire, Cuba, Equatorial Guinea, Haiti, Heard Island and Mcdonald Islands, Islamic Republic of Iran, Republic of Iraq, Democratic People's Republic of Korea (North Korea), Kazhakasthan, Lao People's Democratic Republic (Laos), Lebanon, Liberia, Libyan Arab Jamahiriya, Myanmar, Nigeria, Pakistan, Papua New Guinea, Serbia and Montenegro, Somalia, Sudan, Syrian Arab Republic, Yemen, Zimbabwe.</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                          
+                            <br><span></span><a href="https://candidatesupport.hackerrank.com/hc/en-us" class="register">Platform help</a> </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src=img/b-opc.png alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(6,4)><span class="fa fa-arrow-circle-up fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-8" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Debugginng</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>Debugging is the process of identifying and fixing errors, bugs, or issues in software code, hardware systems, or any technological process.Debugging involves a systematic approach to problem-solving and requires analytical thinking, attention to detail, and familiarity with the technology or system being debugged.</p>
+                       
+                            <br>
+                            <button type=button class="btn btn-info" onclick=pageTransition(9,56)>Details</button>
+                        </p>
+                    </div>
+                    <div class=event-img><img src="img/debugging.jpg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow btm-rht"><a href=# onclick=pageTransition(9,56)><span class="fa fa-arrow-circle-down fa-3x"></span></a>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(10,13)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(6,29)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-9" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Debugging Details</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Event Description:</b>It contains two rounds. The first round is online event and second is offline.
+                            <br><b>Online round:</b>
+                            <br>Basic Program <br>
+                            <br><b>Offline round:</b>
+                            <br>Advance Programs </p>
+                            <p>Date:24,25,26 Aug 2023</p>
+                      
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>FACULTY CO-ORDINATOR</span>
+                            <br><span>Mr.KANNAPIRAN E - 9843749714</span>
+                            <br><span>STUDENT CO-ORDINATOR</span>
+                            <br><span>PRAVEEN V - 9894542281</span>
+                            <br> <a href="https://tekozura.info/" class="register">Register Now</a></p>
+
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/debugging.jpg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(8,61)><span class="fa fa-arrow-circle-up fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-10" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Project Expo</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>Eager to get your projects officially appreciated?! This event provides you with a platform to present your projects and win prizes. Prepare one on spot or showcase your existing one!</p>
+                        <p>Participants are requested to get any additional software or hardware needed for the implementation of their projects. Technical support and guidance will be provided up to a limit.</p>
+                        <button type=button class="btn btn-info" onclick=pageTransition(11,11)>Details</button>
+                    </div>
+                    <div class=event-img><img src=img/b-proj.jpg alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow btm-rht"><a href=# onclick=pageTransition(11,11)><span class="fa fa-arrow-circle-down fa-3x"></span></a>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(12,17)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(8,59)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-11" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Project Expo Details</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Rules</b>
+                            <br>• Team should consist of 2 members.
+                            <br>• Project can be in any language.
+                            <br>• The team can register before the day of fest and also on the day of fest.
+                            <br>• Along with the submission, a 10 minutes presentation is to be delivered.
+                            <br>
+                        </p>
+                        <p>The Round Consists of Project Execution and Demonstration (any kind of app like android, windows 8, iPhone etc can also be done)</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>M Balachandar 7867938999</span>
+                            <br><span>AT Prem 9585606500</span>
+                            <br><span>Date:1 Sep 2023</span>
+                           <br> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGM-_dfbyjOgWhE4mSVBTyu2u6mwyMtZWyHOdyDVtbReuP0w/viewform?pli=1" class="register">Register Now</a></p>
+                         
+
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/expo.jpg" alt="" width=400 height=400>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(10,16)><span class="fa fa-arrow-circle-up fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-10" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Paper Presentation</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>As the popular adage goes “Exchanging ideas alone will leave you with more than what you start with; and exchanging everything else, will leave you with the same”. We, here at demo strive to make it true. So for all those tech savvy folks brimming with ideas, bubbling with confidence and having the right College, your wait for the right opportunity to present your ideas to your fellow tech community is finally over.</p>
+                        <p>Paper presentation event of College CSFest’15 is the best platform to place your ideas and solutions towards the latest and emerging technologies.</p>
+                        <button type=button class="btn btn-info" onclick=pageTransition(13,3)>Details</button>
+                    </div>
+                    <div class=event-img><img src=img/b-ppt.jpg alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow btm-rht"><a href=# onclick=pageTransition(13,3)><span class="fa fa-arrow-circle-down fa-3x"></span></a>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(14,13)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(10,55)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-11" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Paper Presentation Details</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Rules</b>
+                            <ul>
+                                <li>Registration fee is Rs.200 only.</li>
+                                <li>No paper will be taken in the last 2 days to the fest.</li>
+                                <li>A student can give only one paper. (Candidates however can submit more than one paper by paying the requisite amount for each paper but are allowed to present only one among them if selected)</li>
+                                <li>Maximum of 2 participants per group.</li>
+                                <li>Failing to be present when called in presentation will result in disqualification.</li>
+                                <li>No other topics apart from the topic opted will be entertained.</li>
+                                <li>Maximum 10 minute presentation.(8 minutes of talk followed by 2 minutes of questionnaire)</li>
+                                <li>Paper submitted should be restricted to 3 single sided A4 pages in IEEE format.</li>
+                                <li>Submit your papers to <i>your email goes here</i>
+                                    <br>with name, ph.no, mail-id, college name and Receipt No. (Your bank transaction no. for online applicants)</li>
+                                <li>Last date for submission is <i>4th March,2015</i>
+                                </li>
+                                <li>All the submitted candidates will be given Certificate of Participation; Cash price and Merit certificates for winners</li>
+                            </ul>
+                        </p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Mr.J.Sathish kumar,AP/IT 9952414383.</span>
+                            <br><span>Mr.R.V.Viswanathan,AP/IT 9524475718</span>
+                            <br><span>Mail ID : tekclusterit@gmail.com</span> <br>
+                            <br><span>Date:26th August 2023</span> <br>
+                            
+                            <br><a href="https://docs.google.com/forms/d/e/1FAIpQLScY82ctT6etCjblVD0eNhEJ9IkrisrgYv8SkjS5i4k6flKPvg/viewform" class="register">Register Now</a> <br></p>
+                            
+
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src=img/b-ppt.jpg alt="" width=300 height=184>
+                        <br>
+                        <button type=button style=float:right;margin-top:10px class="btn btn-primary" data-toggle=modal data-target=.bs-example-modal-lg>View List</button>
+                        <div class="modal fade bs-example-modal-lg" tabindex=-1 role=dialog aria-labelledby=myLargeModalLabel aria-hidden=true>
+                            <div class="modal-dialog modal-lg">
+                                <div class=modal-content><b><br>1. Advanced Algorithms & Performance Analysis<br>2. Big Data and Analytics<br>3. Cloud Computing<br>4. Computer Graphics & Multimedia<br>5. Data Mining and Warehousing<br>6. Digital Signal and Image processing<br>7. Knowledge based Systems<br>8. Mobile Computing<br>9. Natural Language Processing<br>10. Parallel and Distributed Systems<br>11. Real Time & Embedded System<br>12. Network Management and Security<br>13. Software Engineering<br>14. Wireless and Sensor Networks<br>15. Virtualization<br>16. Mobile application development.<br>17. Information Security And Ethical Hacking<br>18. Social Networking<br>19. Advances in web search and answer engines<br>20. Nano computing<br>Any other topics related to Computer Science'</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(12,20)><span class="fa fa-arrow-circle-up fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-10" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Programming</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>
+                            A programming competition is a competitive event where participants solve computational problems using programming languages and algorithms within a specified time frame. These competitions are popular among students, professionals, and enthusiasts in the field of computer science and programming.</p>
+                        <button type=button class="btn btn-info" onclick=pageTransition(15,60)>Details</button>
+                    </div>
+                    <div class=event-img><img src="img/programming.jpg" alt="" width=400 height=300>
+                    </div>
+                </div>
+                <div class="arrow btm-rht"><a href=# onclick=pageTransition(15,60)><span class="fa fa-arrow-circle-down fa-3x"></span></a>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(16,9)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(12,2)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-11" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Programming Details</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>First round -</b>The participant is given a question and the output of the question is a system’s number or its IP address. He has to go to the system with the corresponding IP address or system number and there will be a folder with a set of questions and here the combination of the outputs of all the questions is a key to another folder where another set of questions await, and so on. The team which takes minimum time to answer five questions will be promoted to the next round.</p>
+                        <p>The team which takes minimum time to answer five questions will be promoted to the next round.</p>
+                        <p><b>Second round-</b> Each question consists of a program in which few lines of the code will be missing. The participant needs to complete the missing code parts. Options will be given for each line of code. Then they have to choose the options in the correct order of missing lines of code. Each option will be represented by a color. Then the options have to be answered through the color of a coin (representing an option). All the coins should be placed in the correct sequence in a limited time.</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Dr.P.Selvi Rajendran</span>
+                            <br><span>9445257280</span>
+                            <br><span>Dr.A.Sai Sabitha</span>
+                            <br><span>9871961589</span>
+                            <br><span>Date:12-09-2023</span>
+                            <br><a href="https://docs.google.com/forms/d/e/1FAIpQLSchKmYjhNTukfg3XtvpsbKN-eFP3cDWhDt3tgjiWB-r-sOL6w/viewform" class="register">Register Now</a></p>
+
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/programming.jpg" alt="" width=400 height=300>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(14,8)><span class="fa fa-arrow-circle-up fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-16" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Workshop</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>Welcome, everyone, to our workshop! We're excited to have each of you here today as we delve into the fascinating world of [Workshop Topic]. Whether you're a seasoned professional looking to enhance your skills or a newcomer eager to explore this subject, we've designed this workshop to cater to all levels of expertise.</p>
+                        <button type=button class="btn btn-info" onclick=pageTransition(17,48)>Details</button>
+                    </div>
+                    <div class=event-img><img src="img/workshop.jpeg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow btm-rht"><a href=# onclick=pageTransition(17,48)><span class="fa fa-arrow-circle-down fa-3x"></span></a>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(18,23)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(14,18)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-17" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Workshop Details</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>
+                            Participating in a symposium workshop can be a valuable experience for learning, networking, and exchanging ideas within a specific field or topic.</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                           <br><span>CONTACT:9840728806 / 09940322437</span>
+                            <br><span>MAIL admin@topengineersindia.com</span>
+                            <br><span>Date:26 Aug 2023</span>
+                            
+                            <br><a href="https://pages.razorpay.com/pl_MFXIdJT0e7UeT4/view" class="register">Register Now</a></p>
+
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/workshop.jpeg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(16,26)><span class="fa fa-arrow-circle-up fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-18" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Poster presentation</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>In this event, contestants prepare a poster that showcases and effectively presents experiments with given objectives, new ideas related to the field. The main idea of the event is to analyze a topic and think with a new bent of mind. The more creative you get, the higher is your chance of impressing the panel.</p>
+                        <button type=button class="btn btn-info" onclick=pageTransition(19,7)>Details</button>
+                    </div>
+                    <div class=event-img><img src=img/b-pos.jpg alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow btm-rht"><a href=# onclick=pageTransition(19,7)><span class="fa fa-arrow-circle-down fa-3x"></span></a>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(20,1)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(16,14)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-19" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Poster presentation Details</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>First round -</b> Decide a theme from the given themes and the participants have to submit the poster abstracts along with the images (maximum of 3 images) describing your theme and submit to the specified mail id. The best posters will be shortlisted for the second round.</p>
+                        <p><b>Second round -</b> Shortlisted people have to give a presentation of their selected abstract on the day of event, on a specified dimension paper (can be A4, A1 charts or posters).</p>
+                        <p><b>Rules</b>
+                            <br>• Registration fee is Rs.150 only
+                            <br>• No paper will be taken in the last 2 days to the fest.
+                            <br>• Participants can submit their abstract by contacting the organizers/volunteers in their nearest area from the Nodal Centers option provided.
+                            <br>• Papers shortlisted will be notified through mail/sms on 5th march 2015.
+                            <br>• A student can give only one paper. (Candidates however can submit more than one paper by paying the requisite amount for each paper but are allowed to present only one among them if selected)
+                            <br>• Maximum of 2 participants per group.
+                            <br>• Failing to be present when called in presentation will result in disqualification.
+                            <br>• No other topics apart from the topic opted will be entertained.
+                            <br>• Maximum 15 minute presentation.(13 minutes of talk followed by 2 minutes of questionnaire)
+                            <br>• Submit your papers to poster@vce-csfest.in with name,ph.no,mail-id,college name.
+                            <br>• Last date for submission is 4th March,2015
+                            <br>• All the submitted candidates will be given Certificate of Participation; Cash price and Merit certificates for winners
+                            <br>
+                        </p>
+                        <p></p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Staff Co-ordinator:+91-9750383957</span>
+                            <br><span>Student Co-ordinator:</span>
+                            <br><span>SubbuRaj:+91-8056972313</span>
+                            <br><span>22nd-23rd September 2023</span>
+                            <br><a href="https://schemcon2023.kongu.edu/">Register Now</a></p>
+
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src=img/b-pos.jpg alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(18,4)><span class="fa fa-arrow-circle-up fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-20" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Quiz</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>A quiz game is a form of interactive entertainment that involves asking participants a series of questions on various topics to test their knowledge and skills. Participants can be individuals or teams, and they attempt to answer questions correctly to earn points or rewards. The game is usually hosted by a quizmaster or presented through a digital platform.</p>
+                        <button type=button class="btn btn-info" onclick=pageTransition(21,19)>Details</button>
+                    </div>
+                    <div class=event-img><img src="img/quiz.jpeg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow btm-rht"><a href=# onclick=pageTransition(21,19)><span class="fa fa-arrow-circle-down fa-3x"></span></a>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(22,13)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(18,10)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-21" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Quiz Details</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Round 1: General Knowledge</b>
+                        <p><b>Round 2: Movie Trivia</b>
+                            <p>Game Rules:
+
+                                1.Participants will be asked the questions one by one.
+                                2.After each question, they can choose an option (a, b, c, d) by typing the corresponding letter.
+                                3.At the end of both rounds, calculate and announce the total scores.
+                                4.The participant with the highest score wins!</p>
+                        
+                        </p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Student Co-ordinators</span>
+                            <br><span>Vasanth - +91 86374 11148</span>
+                            <br><span>Anas Mohammad-+91 79040 94308</span>
+                            <br><span>Date: 26th August 2023</span>
+                            <br><a href="https://docs.google.com/forms/d/e/1FAIpQLSfbltPvpWyZx6R3fGaGpocXICQ-ORC7TTHlZKmkMCM12fjDew/viewform" class="register">Register Now</a></p>
+
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/quiz.jpeg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(20,12)><span class="fa fa-arrow-circle-up fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-22" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>CAD Designing</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>Computer-Aided Design (CAD) is a technology that uses specialized software to create, modify, and optimize designs for a wide range of applications. CAD software allows designers, engineers, and architects to create detailed two-dimensional (2D) and three-dimensional (3D) models of physical objects, buildings, mechanical components, and more.</p>
+                        <button type=button class="btn btn-info" onclick=pageTransition(23,56)>Details</button>
+                    </div>
+                    <div class=event-img><img src="img/cad.jpeg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow btm-rht"><a href=# onclick=pageTransition(23,56)><span class="fa fa-arrow-circle-down fa-3x"></span></a>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(6,28)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(20,29)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-23" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:m#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>CAD Designing Details</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Round 1:Basics</b>
+                        <p><b>Round 2: Advanced CAD Concepts</b>
+                            <p><b>Game Rules:</b>
+
+                                1.Participants will be asked the questions one by one.
+                                2.After each question, they can choose an option (a, b, c, d) by typing the corresponding letter.
+                                3.At the end of both rounds, calculate and announce the total scores.
+                                4.The participant with the highest score wins!
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Student Co-ordinators</span>
+                            <br><span>Vasanth - +91 86374 11148</span>
+                            <br><span>Anas Mohammad-+91 79040 94308</span>
+                            <br><span>Date:26th August 2023</span>
+                            <br> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbltPvpWyZx6R3fGaGpocXICQ-ORC7TTHlZKmkMCM12fjDew/viewform" class="register">Register Now</a>
+                        </p>
+
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/cad.jpeg "alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(22,53)><span class="fa fa-arrow-circle-up fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-24" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>LAN GAMING</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Round1-</b> Group Stage</p>
+                        <p><b>Round2-</b> Elimination Stage</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Dr.S.Kannadhasan -9677565511</span>
+                            <br><span>Mr.N.Saranraj - 97894848841</span>
+                            <br><span>Date:26th August 2023</span><br>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF_wmEcxgv8hQFQQ5dkexeFJi3SBulmZnI94P_8XORnjrZeg/viewform" class="register">Register Now</a>
+                     
+
+                            <br>
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/lan.jpeg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(25,46)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(34,18)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-25" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>GRAFFITI</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Round 1 -</b> Artistic Expression</p>
+                        <p><b>Round 2 -</b> Live Mural or Collaboration</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Rahul Madathil, President SBA: +91 8861416967</span>
+                            <br><span>Smriti Singh, Secretary SBA: +91 7310001122</span>
+                            <br><span>Date:26th August 2023</span>
+                            <br><span>Student Bar Association Email: sba.cail@calaw.in</span><br>
+                            <a href="https://drive.google.com/file/d/1tYUYhMIJXQpvcubuyf7NjFAnlOgzkbZH/view?pli=1" class="register">Register Now</a>
+                           
+
+                            <br>
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/graffit.jpeg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(26,54)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(24,47)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-26" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>PAINT BALL</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Round1-Classic Capture the Flag</b> In this round, participants will engage in a classic paintball game mode like "Capture the Flag".</p>
+                        <p><b>Round2-Elimination Showdown</b>For the second round, focus on an elimination-based game mode that requires teamwork and tactical planning.</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>CONTACT 9840728806 / 09940322437</span>
+                            <br><span>MAIL admin@topengineersindia.com</span>
+                            <br><span>Date:26th August 2023</span><br>
+                            <br><span><a href="https://pages.razorpay.com/pl_MFd4qfJQOlyw5e/view" class="register">Register Now</a></span><br>
+
+
+                         
+
+                            <br>
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/paintball.jpeg" alt="" width=400 height=300>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(27,58)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(25,24)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-27" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>PHOTOGRAPHY</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>Round 1:Preliminary Selection</p>
+                        <p>Participants can submit up to two photographs that showcase the theme "Nature's Harmony".</p>
+                        <p>Round 2: Final Exhibition and Judging</p>
+                        <p>The theme for Round 2 is "Human Connection." Photographs should capture interactions, emotions, relationships, or any instance that portrays a strong connection between people.</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>FACULTY CO-ORDINATOR</span>
+                            <br><span>Mr.KANNAPIRAN E - 9843749714</span>
+                            <br><span>STUDENT CO-ORDINATOR</span>
+                            <br><span>PRAVEEN V - 9894542281</span>
+                            <br><span>Date:26 Aug 2023</span>
+                            <br><span><a href="https://tekozura.info/" class="register">Rgister Now</a></span>
+                            
+
+                            <br>
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/photo.jpeg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(28,1)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(26,6)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-28" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>SHORT FLIM</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Round1-
+                            Title: "Twists of Fate"</b</p>
+                            <p style=padding-top:30px><span><b>For More Details :</b></span>
+                                <br><span>FACULTY CO-ORDINATOR</span>
+                                <br><span>Mr.KANNAPIRAN E - 9843749714</span>
+                                <br><span>STUDENT CO-ORDINATOR</span>
+                                <br><span>PRAVEEN V - 9894542281</span>
+                                <br><span>Date:26 Aug 2023</span>
+                                <br><span><a href="https://tekozura.info/" class="register">Register Now</a></span>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/shortflim.jpeg" alt="" width=400 height=300>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(29,28)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(27,14)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-29" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>SKETCHING</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>Round 1: Qualification Round</p>
+                        <p>Theme: Participants will be given a broad theme or topic to base their sketches on. For example, it could be "Nature's Beauty," "Urban Life," "Fantasy Worlds," etc.</p>
+                        <p>Round 2: Final Round</p>
+                        <p>Theme: A new theme will be provided, which may be more specific or challenging than the first round. This theme should encourage participants to push their creative boundaries</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>9894162495- ANITHASHRE</span>
+                            <br><span>Date:11th - 15th September 2023</span> <br>
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src="img/painting.jpeg" alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(30,13)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(28,10)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-30" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Smart Droid</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>A Quiz App(android app) is built and the apps play store link is placed in the website (College official website), people who wish to play has to download and register.</p>
+                        <p><b>Round1-</b>After registration you’ll find round1 questions in the app, you need to answer them and if your score crosses the threshold score you will be promoted to round two.</p>
+                        <p><b>Round2-</b>A clone of Round 1 with increase in difficulty level. These two rounds are offline (means offsite).</p>
+                        <p><b>Round3-</b>This is onsite you have to use the App and the round will be activated onsite and the team with fastest and highest score will win.</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Demo: (+000000000)</span>
+                            <br><span>Demo: (+000000000)</span>
+                          
+                            <br>Email us at: demo@demo.com</p>
+
+                            <br>
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src=img/b-smrt.png alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(31,46)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(29,18)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-31" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>CPU Assembly</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>Disassembled CPU will be given and a small demo of how the CPU is connected is showed before dismantling. Later you have to reassemble the CPU in the shortest possible time.</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Demo: (+000000000)</span>
+                         
+
+                            <br>
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src=img/b-cpu.jpg alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(32,54)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(30,24)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-32" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Keyboard Assembly</h1>
+                    <div class=event-intro style=color:#000>
+                        <p>Disassembled Keyboard will be given and the keyboard in connected state is showed before dismantling. Later you have to reassemble the Keyboard in the shortest possible time.</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Demo: (+000000000)</span>
+         
+
+                            <br>
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src=img/b-kb.jpg alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(33,23)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(31,51)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-32" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>Guess Who</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Round1-</b>It is time based event, participants are given a puzzle which contains snippets of code or basic parts of computer or a logo they have to complete the remains.</p>
+                        <p><b>Round2-</b>This round declares the winner based on as many questions answered by the team. The questions would relate to personality and name the product built by that person(Clues will be given to identify them).</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Demo: (+000000000)</span>
+                            <br><span>Demo: (+000000000)</span>
+                            <br><span>Demo: (+000000000)</span>
+                            <br>
+
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src=img/b-gue.jpg alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(34,5)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(32,29)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-34" style=background-image:url(img/b-e1.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <h1 style=text-align:center>It's Appening</h1>
+                    <div class=event-intro style=color:#000>
+                        <p><b>Round1-</b>In this round multiple choice questions on app logos, products and their usage, and on various platforms will be asked.</p>
+                        <p><b>Round2-</b>In this round app logos will be displayed randomly for seconds and the contestants have to write the logos as many as they remember.</p>
+                        <p style=padding-top:30px><span><b>For More Details :</b></span>
+                            <br><span>Demo: (+000000000)</span>
+                            <br><span>Demo: (+000000000)</span>
+                            <br>
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class=event-img><img src=img/b-its.jpg alt="" width=300 height=184>
+                    </div>
+                </div>
+                <div class="arrow top-rht"><a href=# onclick=pageTransition(24,58)><span class="fa fa-arrow-circle-right fa-3x"></span></a>
+                </div>
+                <div class="arrow top-lft"><a href=# onclick=pageTransition(33,6)><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                </div>
+            </div>
+            <div class="pt-page pt-page-35" style=background-image:url(img/b-w.png)>
+                <div class=navcolor style=background-color:#f39c12></div>
+                <div class=contains>
+                    <div class=container>
+                        <h1 style=color:#000;text-align:center;padding-bottom:10px;font-size:36px>Sponsors</h1>
+                        <div class=project-wrapper>
+                            <figure class="mix work-item branding"><img src=img/s-bg.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-bg.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>Bharath Gas</h4>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-i.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-i.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>Icons</h4>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-sa.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-sa.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>Srinivasa Alloys</h4>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-pg.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-pg.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>Priya Gold</h4>
+                                    <p>Edible Oils</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-sc.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-sc.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>Sameera's constructions</h4>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-dh.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-dh.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>AP SuperSpeciality</h4>
+                                    <p>Dental Hospitals</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-d.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-d.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>Dabblr</h4>
+                                    <p>The Student Companion</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-ncc.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-ncc.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>NCC</h4>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-vi.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-vi.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>Vaishnavi Ispat</h4>
+                                    <p></p>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-c.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-c.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>Centro</h4>
+                                    <p></p>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-v.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-v.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>VIESPL</h4>
+                                    <p></p>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-gc.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-gc.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>Ga Cibo</h4>
+                                    <p></p>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-sl.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-sl.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>SHODANA</h4>
+                                    <p>Laboratories Limited</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="mix work-item branding"><img src=img/s-sva.png alt="">
+                                <figcaption class=overlay><a class=fancybox rel=works href=img/s-sva.png><i class="fa fa-eye fa-lg"></i></a>
+                                    <h4>SRI VAISHNAOI</h4>
+                                    <p>Automobiles</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=pt-message>
+            <p>Your browser does not support CSS animations.</p>
+        </div>
+        <script src=js/main.js></script>

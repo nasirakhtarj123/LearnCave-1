@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Cave</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaQueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <img src="./Images/logo-svg.svg" alt="T Course Logo" class="logo navigatingLinks" data-val="Home"> -->
+            <h1 style="color:white;">Learn Cave</h1>
+            <i class="fa-solid fa-bars" id="humburger"></i>
+            <!-- <ul id="navSlide">
+                <li class="navigatingLinks" data-val="Home">Home</li>
+                <li class="navigatingLinks" data-val="Courses">Courses</li>
+                <li class="navigatingLinks" data-val="Pricing">Pricing</li>
+                <li class="navigatingLinks" data-val="About">About</li>
+                <li class="navigatingLinks" data-val="Contact">Contact</li>
+            </ul> -->
+        </nav>
+    </header>
+    <section class="homeContainer maxWidthAll marginAuto" id="Home">
+        <div class="textBoxHome">
+            <h1 class="bigText">Learn your <span>Impossibilities</span> with <br> Learn Cave</h1>
+            <p class="smallText">Learn Cave provides you best and easy learning tutorials, projects from scratch and developing programming skills from basics with user friendly lessons, Learning is only hard untill you are BEGINNER!
+            </p>
+            <!-- <button class="button_1">Try For Free!</button> -->
+        </div>
+        <div class="imgBoxHome">
+            <img src="./Images/hero.svg" alt="Hero">
+        </div>
+    </section>
+    <section class="codeFestContainer maxWidthAll marginAuto reveal">
+        <img src="./Images/winnerCup.svg" alt="winning Cup">
+        <p class="normalText">We provide Co-Curricular events for college students can explore our knowledges to outside of campus <br> <span> By Learn Cave Team</span></p>
+    </section>
+    <section class="courseSection maxWidthAll marginAuto reveal" id="Courses">
+        <h1 class="mainHeading bigText">Angular</h1>
+        <h3 class="sub-heading">
+            <b>Introduction</b>
+        </h3>
+        <div class="para">
+
+        
+        <p>Angular is a component-based application design framework, build on Typescript, for creating a sophisticated & a scalable single-page web application that has a well-integrated collection of libraries that helps to develop the code in module-wise with an easy-to-update, debug module. In order to work with Angular, we must have node.js, Node Package Manager(NPM) & Angular CLI installed in the system. Please refer to the Installation of Node.js on Windows/Linux/Mac article for the detailed installation procedure. </p>
+            <h3 class="sub-heading">
+                Steps to Install & Create a new Angular Project
+            </h3>
+            <p>After successful installation of the node.js & npm, we need to install the Angular CLI, which is described below:<br>
+                Open the terminal/Command prompt & type the below command:</p>
+                <h2 class="types">
+                    <b>npm install -g @angular/cli</b>
+                </h2>
+            <p>For checking the version of the node.js & angular CLI installed, type the below command in the cmd:</p>
+            <h2 class="types">
+               <b> node -v<br>
+ng -v or ng --version</b>
+            </h2>
+            <p>Now, we will create the Angular application using the Angular CLI, as given below:</p>
+            <h2 class="types">
+                <b>ng new Project-Name</b>
+            </h2>
+            <p>You may navigate to any of the directories where you want to create the project.</p>
+            <h3 class="sub-heading">
+                Run the application
+            </h3>
+            <p>Navigate the folder where the project has been created & type the below command to run the app:</p>
+            <h2 class="types">
+                <b>cd Project-Name <br>
+                    ng serve --open</b>
+            </h2>
+            <p>The ng serve command will launch the server & will open your browser to http://localhost:4200/.
+            </p>
+            <h3 class="sub-heading">
+                Angular Fundamental
+            </h3>
+            <p>This section will cover the Components, Creation of Components, Lifecycle of the Component, and various directives provided by Angular & lastly, we will discuss the Decorator. The Component is the basic building block for developing UI for any Angular app, which contains the tree of Angular Component. The Directives are the subset for the components, where the Components are always associated with the template. Only a single Component would be instantiated for a given element in the template. The Components should belong to the NgModule, which helps to avail the component to another component or application. In order to do this, the component should be listed in the declarations field of the NgModule metadata. </p>
+            <h3 class="sub-heading">
+                Components
+            </h3>
+            <h2 class="types">
+                Component Creation
+            </h2>
+            <p>The Angular application is composed of a different set of components, where every component has different roles & functionality that is designed to perform the specific task. The Components can be created with the following command:</p>
+            <p><b>ng generate component &ltcomponent-name></b></p>
+            <p>Please refer to the Components in Angular 8 article for further detailed descriptions.</p>
+            <h2 class="types">
+                Lifecycle Hooks of Component
+            </h2>
+            <p>Every Component has its own lifecycle, which will be started when Angular instantiates the particular Component class that renders the Component view along with the child view. It is basically timed methods that differ when and why they execute. These methods will be triggered with the change detection, i.e., depending upon the conditions, the corresponding cycle will be executed. Angular will constantly check when the data-bound properties changes & accordingly update both the view & the Component instances, as required. The order of the execution for these lifecycle hooks is important. The Component instance will be destroyed & will be removed its rendered templates from the DOM by Angular when the lifecycle ends.</p>
+            <h3 class="sub-heading">
+                Modules
+            </h3>
+            <p>Every Angular application contains the root module, called NgModules, which acts as the container for the cohesive block of code, that is specifically designed to that application domain, a workflow, or a closely related set of capabilities. It consists of the components, services, & other code files, whose scope is decided by the NgModules. The NgModules in the AppModule, reside in the app.module.ts file. The  @NgModule() class decorator is used to define the NgModule. It is a function that accepts one metadata object, whose properties describe the module. </p>
+            <h3 class="subheading">Directives</h3>
+            <p>The Directive is generally a built-in class that includes the additional behavior to elements in the Angular Applications. There are 2 types of directives:</p>
+            <h2 class="types">
+                Attribute Directive
+            </h2>
+            <ul>
+                <p>The Attribute Directive is used to modify the appearance or change the behavior of DOM elements & the components in Angular. In this case, the element, component, or another directive can be styled.</p>
+            </ul>       
+            <h2 class="types">
+                Structural Directive
+            </h2>
+            <ul>
+                <p>The Structural Directive is used to change the structure of the element or the component, i.e. it is used for modifying the structure of the DOM by applying or removing the elements from the DOM. </p>
+            </ul>
+        </div>
+    <button class="button_1" onclick="more()">MORE</button>
+    <script>
+        function more()
+        {
+            window.location.href = "https://www.mygreatlearning.com/academy/learn-for-free/courses/python-fundamentals-for-beginners"
+        }
+    </script>
+        <section class="about_us maxWidthAll marginAuto reveal" id="About">
+        <h1 class="mainHeading bigText">About Us</h1>
+        <div class="aboutContainer">
+            <img src="./Images/UserInterface.svg" alt="About Us">
+            <p class="normalText">Learn Cave helps you to get close to your dreams of Programming world. Learn Cave is one of the best online coding Learning platform for programmers in whole wide world. Beginner's who want to learn Coding and Programming are too joining us. We have around <br> With our comprehensive course curriculum, you will cover all cutting edge topics. Learn Cave has it's own brand, with TAG of <span>Asia's Biggest Online Coding Course</span>. With the evolution of computers programming languages, Learn Cave is also contributing in this evolution by provind paid courses of Programming Languages such as Python, Javascript, C++, Java, Angular and more. We help students to fast-track your career in this evolving programming field.</p>
+        </div>
+    </section>
+   
+
+    </section>
+    <section class="faq maxWidthAll marginAuto reveal">
+        <h1 class="mainHeading bigText">FAQ</h1>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>Will Learn Cave provide course for freshers in programming?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Yes, our courses are too friendly to get understood easily for freshies in programming.</p>
+            </div>
+        </div>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>How can I join codefest of Learn Cave?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Subscribe our Learn Cave Youtube to get instant updates of codefest. You can also join Our Discord Server for more information.</p>
+            </div>
+        </div>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>Why should I choose T-Course when other platforms provide course in less amount?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>T-Course provides you 24/7 Guidence in programming courses. Users get free source code of many websites for Professional/Advance Learning.
+                </p>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="maxWidthAll marginAuto">
+        <div class="footerContainer">
+            <div class="footerDiv">
+        <a href="#" style="color: white;text-decoration: none;font-size: 30px;">Learn Cave</a>
+                <p class="smallText">Learn Cave helps you to get close to your dreams of programming world. Learn Cave is one of the best online coding Learning/Competition platform for programmers in whole wide world. Beginner's who want to learn coding and programming are too joining us.</p>
+            </div>
+            <!-- <div class="footerDiv navigatingFooterLinks">
+                <p class="regularText navigatingLinks" data-val="Courses">Courses</p>
+                <p class="regularText navigatingLinks" data-val="Pricing">Pricing</p>
+                <p class="regularText navigatingLinks" data-val="About">About Us</p>
+                <p class="regularText navigatingLinks" data-val="Contact">Contact</p>
+            </div> -->
+            <!-- <div class="footerDiv">
+                <div class="socialLinks">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <p class="regularText">Follow Us On</p> -->
+            </div>
+        </div>
+    </footer>
+    <div class="copyRight">
+        <p class="smallText">&#169; Created By Learn Cave 2023</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

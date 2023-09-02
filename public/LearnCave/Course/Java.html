@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Cave</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaQueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <img src="./Images/logo-svg.svg" alt="T Course Logo" class="logo navigatingLinks" data-val="Home"> -->
+            <h1 style="color:white;">Learn Cave</h1>
+            <i class="fa-solid fa-bars" id="humburger"></i>
+            <!-- <ul id="navSlide">
+                <li class="navigatingLinks" data-val="Home">Home</li>
+                <li class="navigatingLinks" data-val="Courses">Courses</li>
+                <li class="navigatingLinks" data-val="Pricing">Pricing</li>
+                <li class="navigatingLinks" data-val="About">About</li>
+                <li class="navigatingLinks" data-val="Contact">Contact</li>
+            </ul> -->
+        </nav>
+    </header>
+    <section class="homeContainer maxWidthAll marginAuto" id="Home">
+        <div class="textBoxHome">
+            <h1 class="bigText">Learn your <span>Impossibilities</span> with <br> Learn Cave</h1>
+            <p class="smallText">Learn Cave provides you best and easy learning tutorials, projects from scratch and developing programming skills from basics with user friendly lessons, Learning is only hard untill you are BEGINNER!
+            </p>
+            <!-- <button class="button_1">Try For Free!</button> -->
+        </div>
+        <div class="imgBoxHome">
+            <img src="./Images/hero.svg" alt="Hero">
+        </div>
+    </section>
+    <section class="codeFestContainer maxWidthAll marginAuto reveal">
+        <img src="./Images/winnerCup.svg" alt="winning Cup">
+        <p class="normalText">We provide Co-Curricular events for college students can explore our knowledges to outside of campus <br> <span> By Learn Cave Team</span></p>
+    </section>
+    <section class="courseSection maxWidthAll marginAuto reveal" id="Courses">
+        <h1 class="mainHeading bigText">Java Fundamentals</h1>
+        <h3 class="sub-heading">
+            <b>Introduction</b>
+        </h3>
+        <div class="para">
+
+        
+        <p>Java is a high-level, general-purpose, object-oriented, and secure programming language developed by James Gosling at Sun Microsystems, Inc. in 1991. It is formally known as OAK. In 1995, Sun Microsystem changed the name to Java. In 2009, Sun Microsystem takeover by Oracle Corporation.</p>
+            <h3 class="sub-heading">
+                Java Platform
+            </h3>
+            <p>Java Platform is a collection of programs. It helps to develop and run a program written in the Java programming language. Java Platform includes an execution engine, a compiler and set of libraries. Java is a platform-independent language.</p>
+                <h3 class="sub-heading">
+                    Features of Java
+                </h3>
+                <ul>
+                    
+                        <b>Simple</b>
+                        <p>&nbsp &nbsp &nbspJava is a simple language because its syntax is simple, clean, and easy to understand. Complex and ambiguous concepts of C++ are either eliminated or re-implemented in Java. For example, pointer and operator overloading are not used in Java.</p>
+                </ul>
+                <ul>
+                    
+                    <b>Object-Oriented</b>
+                    <p>&nbsp &nbsp &nbspIn Java, everything is in the form of the object. It means it has some data and behavior. A program must have at least one class and object.</p>
+            </ul>
+            
+            <h3 class="sub-heading">
+                OOPs (Object Oriented Programming System)
+            </h3>    
+            <p>Object-oriented programming is a way of solving a complex problem by breaking them into a small sub-problem. An object is a real-world entity. It is easier to develop a program by using an object. In OOPs, we create programs using class and object in a structured manner.</p>
+            <h2 class="types">
+                Class
+            </h2>
+            <p>A class is a template or blueprint or prototype that defines data members and methods of an object. An object is the instance of the class. We can define a class by using the class keyword.</p>
+            <h2 class="types">
+                Object
+            </h2>
+            <p>An object is a real-world entity that can be identified distinctly. For example, a desk, a circle can be considered as objects. An object has a unique behavior, identity, and state. Data fields with their current values represent the state of an object (also known as its properties or attributes).</p>
+            <h2 class="types">
+                Abstraction
+            </h2>
+            <p>An abstraction is a method of hiding irrelevant information from the user. For example, the driver only knows how to drive a car; there is no need to know how does the car run. We can make a class abstract by using the keyword abstract. In Java, we use abstract class and interface to achieve abstraction.</p>
+            <h2 class="types">
+                Encapsulation
+            </h2>
+            <p>An encapsulation is the process of binding data and functions into a single unit. A class is an example of encapsulation. In Java, Java bean is a fully encapsulated class.</p>
+            <h2 class="types">
+                Inheritance
+            </h2>          
+            <p>Inheritance is the mechanism in which one class acquire all the features of another class. We can achieve inheritance by using the extends keyword. It facilitates the reusability of the code.</p>
+            <h2 class="types">
+                Polymorphism
+            </h2>  
+            <p>
+                The polymorphism is the ability to appear in many forms. In other words, single action in different ways. For example, a boy in the classroom behaves like a student, in house behaves like a son. There are two types of polymorphism: run time polymorphism and compile-time polymorphism.
+            </p>
+            <h3 class="sub-heading">
+                Application
+            </h3>
+            <p>According to Sun, 3 billion devices run Java. There are many devices where Java is currently used. Some of them are as follows:</p>
+            <ul>
+                <li>Desktop Applications such as acrobat reader, media player, antivirus, etc.</li>
+                <li>Web Applications such as irctc.co.in, javatpoint.com, etc.</li>
+                <li>Enterprise Applications such as banking applications.</li>
+                <li>Mobile</li>
+                <li>Embedded System</li>
+                <li>Smart Card</li>
+                <li>Robotics</li>
+                <li>Games, etc</li>
+            </ul>
+       
+       
+       
+       
+       
+           
+        </div>
+    <button class="button_1" onclick="more()">MORE</button>
+    <script>
+        function more()
+        {
+            window.location.href = "https://www.freecodecamp.org/news/learn-java-free-java-courses-for-beginners/"
+        }
+    </script>
+        <section class="about_us maxWidthAll marginAuto reveal" id="About">
+        <h1 class="mainHeading bigText">About Us</h1>
+        <div class="aboutContainer">
+            <img src="./Images/UserInterface.svg" alt="About Us">
+            <p class="normalText">Learn Cave helps you to get close to your dreams of Programming world. Learn Cave is one of the best online coding Learning platform for programmers in whole wide world. Beginner's who want to learn Coding and Programming are too joining us. We have around <br> With our comprehensive course curriculum, you will cover all cutting edge topics. Learn Cave has it's own brand, with TAG of <span>Asia's Biggest Online Coding Course</span>. With the evolution of computers programming languages, Learn Cave is also contributing in this evolution by provind paid courses of Programming Languages such as Python, Javascript, C++, Java, Angular and more. We help students to fast-track your career in this evolving programming field.</p>
+        </div>
+    </section>
+   
+
+    </section>
+    <section class="faq maxWidthAll marginAuto reveal">
+        <h1 class="mainHeading bigText">FAQ</h1>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>Will Learn Cave provide course for freshers in programming?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Yes, our courses are too friendly to get understood easily for freshies in programming.</p>
+            </div>
+        </div>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>How can I join codefest of Learn Cave?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Subscribe our Learn Cave Youtube to get instant updates of codefest. You can also join Our Discord Server for more information.</p>
+            </div>
+        </div>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>Why should I choose Learn Cave when other platforms provide course in less amount?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Learn Cave provides you 24/7 Guidence in programming courses. Users get free source code of many websites for Professional/Advance Learning.
+                </p>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="maxWidthAll marginAuto">
+        <div class="footerContainer">
+            <div class="footerDiv">
+        <a href="#" style="color: white;text-decoration: none;font-size: 30px;">Learn Cave</a>
+                <p class="smallText">Learn Cave helps you to get close to your dreams of programming world. Learn Cave is one of the best online coding Learning/Competition platform for programmers in whole wide world. Beginner's who want to learn coding and programming are too joining us.</p>
+            </div>
+            <!-- <div class="footerDiv navigatingFooterLinks">
+                <p class="regularText navigatingLinks" data-val="Courses">Courses</p>
+                <p class="regularText navigatingLinks" data-val="Pricing">Pricing</p>
+                <p class="regularText navigatingLinks" data-val="About">About Us</p>
+                <p class="regularText navigatingLinks" data-val="Contact">Contact</p>
+            </div> -->
+            <!-- <div class="footerDiv">
+                <div class="socialLinks">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <p class="regularText">Follow Us On</p> -->
+            </div>
+        </div>
+    </footer>
+    <div class="copyRight">
+        <p class="smallText">&#169; Created By Learn Cave 2023</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

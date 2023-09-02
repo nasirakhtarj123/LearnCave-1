@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Cave</title>
+    <link rel="icon" href="images/user-graduate-solid.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+ 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Contact.css">
+    <!--  EmailJs File-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("YOUR_PUBLIC_KEY");
+   })();
+</script>
+</head>
+<body>
+
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><i class="fas fa-user-graduate"></i>Learn Cave</a>
+
+    <nav class="navbar">
+        <ul class="links">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#event">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- <a href="#" class="action_btn">Get Started
+        <div class="toggle_byn">
+             
+        </div>
+    </a> -->
+    <div id="login" class="fas fa-user-circle"></div>
+
+</header>
+
+<div class="login-form">
+
+    <form action="">
+        <h3>Login</h3>
+        <input type="email" placeholder="Email" class="box">
+        <input type="password" placeholder="Password" class="box">
+        <p>Forgot Password? <a href="#">Click Here</a></p>
+        <p>Don't have an Account? <a href="#">Register</a></p>
+        <input type="submit" class="btn" value="Login">
+        <i class="fas fa-times"></i>
+    </form>
+
+</div>
+<section class="home" id="home">
+
+    <h1>Learning Cave</h1>
+    <p>Get Access to Unlimited Educational Resources. Everywhere, Everytime!</p>
+    <a href="#"><button class="btn">Go!</button></a>
+
+    <div class="shape"></div>
+
+</section>
+<section class="contact" id="contact">
+
+   
+
+    <div class="container">
+        <form>
+            <h3>Contact Us</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input class="email" type="email" id="email" placeholder="Email id" required> 
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button type="submit" onclick="sendMail()">send</button>
+        </form>
+        <script>
+        function sendMail(){
+
+            var email=document.getElementById("email").value;
+            var from_name=document.getElementById("name").value;
+            var message=document.getElementById("message").value;
+        
+            var templateParams = {
+                email: email,
+                from_name: from_name,
+                message: message
+              };
+              const serviceId = "service_o69max9";
+              const templateId = "template_0rjpuef";
+              emailjs.send(serviceId, templateId, templateParams)
+          .then(function(response) {
+             console.log('SUCCESS!', response.status, response.text);
+             window.alert("Sent successfully!");
+             
+          })
+        }
+    </script>
+        <img class="con-img" src="images/Message.svg" alt="">
+    </div>
+
+</section>
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+           
+            <h3>Learn Cave</h3>
+            
+                <p>Learn Cave is an online education platform that delivers video courses, programs and resources.</p>
+                <img class="img-1" src="images\1.png" alt="">
+            </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">services</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Our Contacts</h3>
+            <p> <i class="fas fa-map-marker-alt"></i>Trichengode,Tamilnadu,India</p>
+            <p> <i class="fas fa-envelope"></i> www.ksiet.ac.in </p>
+            <p> <i class="fas fa-phone"></i>+91 8220089955</p>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

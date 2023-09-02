@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Cave</title>
+    <!-- <link rel="stylesheet" href="css/course-css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/course-css/mediaQueries.css"> -->
+    <style>
+        @media only screen and (max-width:720px){
+    .logo{
+        height: 40px;
+    }
+    .navbar ul{
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: -500px;
+        background-color: rgb(23,24,32);
+        width: 60%;
+        height: 100vh;
+    }
+
+    .navbar ul li{
+        margin: 12px 15px;
+    }
+
+    .navbar i{
+        display: flex;
+    }
+
+    .navbar .openNav{
+        right: 0px;
+        z-index: 12;
+    }
+
+    .homeContainer{
+        flex-direction: column;
+        padding-top: 6.5rem;
+    }
+
+    .homeContainer div{
+        width: 100%;
+    }
+
+    .codeFestContainer{
+        flex-direction: column;
+        padding: 20px 12px;
+        margin: 6rem 12px;
+    }
+
+    .codeFestContainer img{
+        width: 80%;
+    }
+
+    .codeFestContainer p{
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .priceBox p{
+        font-size: 16px;
+    }
+
+    .aboutContainer{
+        flex-direction: column;
+    }
+
+    .aboutContainer img{
+        width: 100%;
+    }
+
+    .aboutContainer p{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .faqBox .qnaDiv h1{
+        font-size: 1rem;
+    }
+
+    footer .footerContainer{
+        flex-direction: column;
+    }
+
+    footer .footerDiv{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width:670px){
+    .smallText{
+        font-size: 0.95rem;
+    }
+    .regularText{
+        font-size: 1.175rem;
+    }
+    .normalText{
+        font-size: 0.9rem;
+    }
+}
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --main-blue-all: #00ffff;
+    --main-dark-bg: rgba(30, 41, 58, 1);
+    --dark-purple-color: rgb(2, 16, 82);
+    --main-color-dark: #1b1c20;
+    --main-color-all: rgb(30, 32, 42);
+    --standard-blue-color: #007fff;
+    --main-blue-light: #0080ff80;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-color-all);
+}
+
+/* ------------------Common CSS Stylings --------------------- */
+
+.maxWidthAll{
+    max-width: 1180px;
+    padding: 0 40px;
+}
+
+.marginAuto {
+    margin: auto;
+}
+
+.smallText {
+    font-size: 1rem;
+    color: #ffffffa8;
+    margin: 3px 0;
+    font-family: 'Poppins';
+    line-height: 26px;
+}
+
+.regularText {
+    font-size: 1.375rem;
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins';
+    margin: 6px 0;
+}
+
+.normalText {
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins';
+    margin: 6px 0;
+}
+
+.bigText {
+    font-size: 2.125rem;
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins';
+    margin: 6px 0;
+}
+
+
+/* -------------------------Navbar Styling --------------------- */
+
+header {
+    width: 100%;
+    box-shadow: 0px 0px 12px #000000ad;
+    position: fixed;
+    background-color: var(--main-color-all);
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    max-width: 1380px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    height: 80px;
+    position: relative;
+}
+
+.logo {
+    height: 46px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+}
+
+.navbar ul li {
+    list-style: none;
+    color: white;
+    margin-left: 26px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+.navbar i {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    align-self: center;
+
+}
+
+.navbar ul li:hover {
+    color: var(--main-blue-all);
+}
+
+
+/* ------------------------- Home Styling ------------------- */
+
+.homeContainer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding-bottom: 7rem;
+}
+
+.homeContainer div{
+    width: 50%;
+}
+
+.textBoxHome h1 span{
+    color: var(--main-blue-all);
+}
+
+.button_1{
+    outline: none;
+    border: 2px solid var(--standard-blue-color);
+    padding: 6px 14px;
+    font-family: 'Poppins';
+    background-color: var(--standard-blue-color);
+    color: white;
+    margin-top: 12px;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: .3s;
+    cursor: pointer;
+    margin-left: 500px;
+}
+
+.button_1:hover{
+    background-color: #0073e6;
+}
+
+.imgBoxHome img{
+    width: 100%;
+    animation: animHero 3s linear infinite;
+}
+
+@keyframes animHero {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(16px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/* ------------------- Codefest Container ---------------------- */
+
+.codeFestContainer{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--standard-blue-color);
+}
+
+.codeFestContainer img{
+    height: 270px;
+}
+
+.codeFestContainer p{
+    width: 50%;
+}
+
+.codeFestContainer p span{
+    color: rgba(255,255,255,0.7);
+
+}
+
+
+
+/* -------------------- Course Styling ------------------- */
+
+.courseSection{
+    padding-top: 7rem;
+}
+
+.mainHeading{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.mainHeading::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    border-radius: 4px;
+    bottom: -6px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.courseContainer{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.course img{
+    width: 250px;
+}
+
+.course .courseSalary{
+    background-color: var(--standard-blue-color);
+    padding: 3px 10px;
+}
+
+.pricing{
+    padding-top: 7rem;
+}
+
+.pricingContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-top: 4rem;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.priceBox{
+    background-color: var(--main-color-dark);
+    padding: 20px 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+}
+
+.priceBox:hover{
+    background-color: #1e1f24;
+}
+
+.priceBox h1{
+    border-bottom: 1px solid white;
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.priceBox p{
+    width: 100%;
+    background-color: var(--standard-blue-color);
+    text-align: center;
+    padding: 6px 0px;
+    font-size: 20px;
+}
+
+.priceBox button{
+    align-self: center;
+}
+
+
+/* ------------------------- About Us Styling --------------------- */
+
+.about_us{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.aboutContainer{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutContainer img{
+    width: 45%;
+}
+
+.aboutContainer p{
+    width: 45%;
+    font-size: 18px;
+}
+
+.aboutContainer p span{
+    background-color: var(--main-blue-light);
+}
+
+
+
+/* ------------------------ Count Styling --------------------- */
+
+.count{
+    background-color: var(--main-dark-bg);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    text-align: center;
+    border-radius: 4px;
+}
+
+.count div h1{
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.count div p{
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+/* ------------------------- Contact Us Styling -------------------- */
+
+.contact_us{
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contact_us p{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 28px;
+}
+
+.contact_us form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_us form div{
+    position: relative;
+    max-width: 550px;
+    width: 100%;
+    margin: 8px 0;
+    background-color: transparent;
+    border: 2px solid var(--standard-blue-color);
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.contact_us form div i{
+    color: var(--standard-blue-color);
+    font-size: 16px;
+    margin-left: 6px;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+
+.contact_us form div input{
+    background-color: transparent;
+    font-family: 'Poppins';
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 8px 8px 8px 32px;
+    font-size: 14px;
+    color: white;
+}
+
+#contactTextArea{
+    width: 100%;
+    resize: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 8px 8px 8px 32px;
+    font-family: 'Poppins';
+    outline: none;
+}
+
+
+#contactTextArea::-webkit-scrollbar{
+    display: none;
+}
+
+.contact_us form button{
+    max-width: 550px;
+    width: 100%;
+}
+
+.contact_us img{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 20vw;
+    animation: animMessage 3s linear infinite;
+}
+
+@keyframes animMessage {
+    0%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+
+/* ------------------------- FAQ Styling --------------------- */
+
+.faq{
+    padding-top: 7rem;
+}
+
+.faq .mainHeading{
+    margin-bottom: 3rem;
+}
+
+.faqBox{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.faqBox .qnaDiv{
+    box-shadow: 0px 0px 12px rgba(0 0 0 / 50%);
+    padding: 6px 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.faqBox h1{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 6px 0;
+}
+
+.faqBox .fa-caret-up{
+    display: none;
+}
+
+.faqBox.open .fa-caret-up{
+    display: flex;
+}
+
+.faqBox.open .fa-caret-down{
+    display: none;
+}
+
+.faqBox .ansDiv{
+    background-color: var(--main-dark-bg);
+    box-sizing: border-box;
+    height: 0px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.faqBox.open .ansDiv{
+    padding: 14px 22px;
+    height: auto;
+}
+
+.faqBox p{
+    margin: 0px;
+    overflow: hidden;
+}
+
+
+/* ---------------------- Footer Styling ------------------ */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footerContainer{
+    display: flex;
+    padding-top: 7rem;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+footer .footerDiv{
+    align-items: center;
+    width: 33%;
+}
+
+footer .navigatingFooterLinks{
+    text-align: center;
+}
+
+footer .navigatingFooterLinks p{
+    margin-bottom: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+footer .navigatingFooterLinks p:hover{
+    color: var(--main-blue-all);
+}
+
+footer .footerDiv:nth-child(3) p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.socialLinks{
+    text-align: center;
+}
+
+.socialLinks i{
+    margin: 0px 12px;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.socialLinks i:nth-child(1):hover{
+    color: #DD2A7B;
+}
+.socialLinks i:nth-child(2):hover{
+    color: #00ACEE;
+}
+.socialLinks i:nth-child(3):hover{
+    color: #5865F2;
+}
+.socialLinks i:nth-child(4):hover{
+    color: #e62117;
+}
+
+
+.reveal{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: .4s;
+    position: relative;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0px);    
+}
+
+.copyRight{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+ /* Scroll Bar Styling ------------ */
+
+ ::-webkit-scrollbar{
+    width: 8px;
+    background-color: var(--main-color-all);
+ }
+
+ ::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
+ }
+
+ ::-webkit-scrollbar-thumb:hover{
+    background: #ffffffdc;
+ }
+.sub-heading{
+    color:white;
+    text-transform: uppercase;
+}
+.para{
+    color: white;
+    text-align: justify;
+}
+.types{
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <img src="./Images/logo-svg.svg" alt="T Course Logo" class="logo navigatingLinks" data-val="Home"> -->
+            <h1 style="color:white;">Learn Cave</h1>
+            <i class="fa-solid fa-bars" id="humburger"></i>
+            <!-- <ul id="navSlide">
+                <li class="navigatingLinks" data-val="Home">Home</li>
+                <li class="navigatingLinks" data-val="Courses">Courses</li>
+                <li class="navigatingLinks" data-val="Pricing">Pricing</li>
+                <li class="navigatingLinks" data-val="About">About</li>
+                <li class="navigatingLinks" data-val="Contact">Contact</li>
+            </ul> -->
+        </nav>
+    </header>
+    <section class="homeContainer maxWidthAll marginAuto" id="Home">
+        <div class="textBoxHome">
+            <h1 class="bigText">Learn your <span>Impossibilities</span> with <br> Learn Cave</h1>
+            <p class="smallText">Learn Cave provides you best and easy learning tutorials, projects from scratch and developing programming skills from basics with user friendly lessons, Learning is only hard untill you are BEGINNER!
+            </p>
+            <!-- <button class="button_1">Try For Free!</button> -->
+        </div>
+        <div class="imgBoxHome">
+            <img src="img/Course-images/hero.svg" alt="Hero">
+        </div>
+    </section>
+    <section class="codeFestContainer maxWidthAll marginAuto reveal">
+        <img src="img/Course-images/winnerCup.svg" alt="winning Cup">
+        <p class="normalText">We provide Co-Curricular events for college students can explore our knowledges to outside of campus <br> <span> By Learn Cave Team</span></p>
+    </section>
+    <section class="courseSection maxWidthAll marginAuto reveal" id="Courses">
+        <h1 class="mainHeading bigText">Angular</h1>
+        <h3 class="sub-heading">
+            <b>Introduction</b>
+        </h3>
+        <div class="para">
+
+        
+        <p>Angular is a component-based application design framework, build on Typescript, for creating a sophisticated & a scalable single-page web application that has a well-integrated collection of libraries that helps to develop the code in module-wise with an easy-to-update, debug module. In order to work with Angular, we must have node.js, Node Package Manager(NPM) & Angular CLI installed in the system. Please refer to the Installation of Node.js on Windows/Linux/Mac article for the detailed installation procedure. </p>
+            <h3 class="sub-heading">
+                Steps to Install & Create a new Angular Project
+            </h3>
+            <p>After successful installation of the node.js & npm, we need to install the Angular CLI, which is described below:<br>
+                Open the terminal/Command prompt & type the below command:</p>
+                <h2 class="types">
+                    <b>npm install -g @angular/cli</b>
+                </h2>
+            <p>For checking the version of the node.js & angular CLI installed, type the below command in the cmd:</p>
+            <h2 class="types">
+               <b> node -v<br>
+ng -v or ng --version</b>
+            </h2>
+            <p>Now, we will create the Angular application using the Angular CLI, as given below:</p>
+            <h2 class="types">
+                <b>ng new Project-Name</b>
+            </h2>
+            <p>You may navigate to any of the directories where you want to create the project.</p>
+            <h3 class="sub-heading">
+                Run the application
+            </h3>
+            <p>Navigate the folder where the project has been created & type the below command to run the app:</p>
+            <h2 class="types">
+                <b>cd Project-Name <br>
+                    ng serve --open</b>
+            </h2>
+            <p>The ng serve command will launch the server & will open your browser to http://localhost:4200/.
+            </p>
+            <h3 class="sub-heading">
+                Angular Fundamental
+            </h3>
+            <p>This section will cover the Components, Creation of Components, Lifecycle of the Component, and various directives provided by Angular & lastly, we will discuss the Decorator. The Component is the basic building block for developing UI for any Angular app, which contains the tree of Angular Component. The Directives are the subset for the components, where the Components are always associated with the template. Only a single Component would be instantiated for a given element in the template. The Components should belong to the NgModule, which helps to avail the component to another component or application. In order to do this, the component should be listed in the declarations field of the NgModule metadata. </p>
+            <h3 class="sub-heading">
+                Components
+            </h3>
+            <h2 class="types">
+                Component Creation
+            </h2>
+            <p>The Angular application is composed of a different set of components, where every component has different roles & functionality that is designed to perform the specific task. The Components can be created with the following command:</p>
+            <p><b>ng generate component &ltcomponent-name></b></p>
+            <p>Please refer to the Components in Angular 8 article for further detailed descriptions.</p>
+            <h2 class="types">
+                Lifecycle Hooks of Component
+            </h2>
+            <p>Every Component has its own lifecycle, which will be started when Angular instantiates the particular Component class that renders the Component view along with the child view. It is basically timed methods that differ when and why they execute. These methods will be triggered with the change detection, i.e., depending upon the conditions, the corresponding cycle will be executed. Angular will constantly check when the data-bound properties changes & accordingly update both the view & the Component instances, as required. The order of the execution for these lifecycle hooks is important. The Component instance will be destroyed & will be removed its rendered templates from the DOM by Angular when the lifecycle ends.</p>
+            <h3 class="sub-heading">
+                Modules
+            </h3>
+            <p>Every Angular application contains the root module, called NgModules, which acts as the container for the cohesive block of code, that is specifically designed to that application domain, a workflow, or a closely related set of capabilities. It consists of the components, services, & other code files, whose scope is decided by the NgModules. The NgModules in the AppModule, reside in the app.module.ts file. The  @NgModule() class decorator is used to define the NgModule. It is a function that accepts one metadata object, whose properties describe the module. </p>
+            <h3 class="subheading">Directives</h3>
+            <p>The Directive is generally a built-in class that includes the additional behavior to elements in the Angular Applications. There are 2 types of directives:</p>
+            <h2 class="types">
+                Attribute Directive
+            </h2>
+            <ul>
+                <p>The Attribute Directive is used to modify the appearance or change the behavior of DOM elements & the components in Angular. In this case, the element, component, or another directive can be styled.</p>
+            </ul>       
+            <h2 class="types">
+                Structural Directive
+            </h2>
+            <ul>
+                <p>The Structural Directive is used to change the structure of the element or the component, i.e. it is used for modifying the structure of the DOM by applying or removing the elements from the DOM. </p>
+            </ul>
+        </div>
+    <button class="button_1" onclick="more()">MORE</button>
+    <script>
+        function more()
+        {
+            window.location.href = "https://www.freecodecamp.org/news/want-to-learn-angular-heres-our-free-33-part-course-by-dan-wahlin-fc2ff27ab451/"
+        }
+    </script>
+        <section class="about_us maxWidthAll marginAuto reveal" id="About">
+        <h1 class="mainHeading bigText">About Us</h1>
+        <div class="aboutContainer">
+            <img src="img/Course-images/UserInterface.svg" alt="About Us">
+            <p class="normalText">Learn Cave helps you to get close to your dreams of Programming world. Learn Cave is one of the best online coding Learning platform for programmers in whole wide world. Beginner's who want to learn Coding and Programming are too joining us. We have around <br> With our comprehensive course curriculum, you will cover all cutting edge topics. Learn Cave has it's own brand, with TAG of <span>Asia's Biggest Online Coding Course</span>. With the evolution of computers programming languages, Learn Cave is also contributing in this evolution by provind paid courses of Programming Languages such as Python, Javascript, C++, Java, Angular and more. We help students to fast-track your career in this evolving programming field.</p>
+        </div>
+    </section>
+   
+
+    </section>
+    <section class="faq maxWidthAll marginAuto reveal">
+        <h1 class="mainHeading bigText">FAQ</h1>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>Will Learn Cave provide course for freshers in programming?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Yes, our courses are too friendly to get understood easily for freshies in programming.</p>
+            </div>
+        </div>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>How can I join codefest of Learn Cave?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Subscribe our Learn Cave Youtube to get instant updates of codefest. You can also join Our Discord Server for more information.</p>
+            </div>
+        </div>
+        <div class="faqBox reveal">
+            <div class="qnaDiv">
+                <h1>Why should I choose Learn Cave when other platforms provide course in less amount?</h1>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+            <div class="ansDiv">
+                <p>Learn Cave provides you 24/7 Guidence in programming courses. Users get free source code of many websites for Professional/Advance Learning.
+                </p>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="maxWidthAll marginAuto">
+        <div class="footerContainer">
+            <div class="footerDiv">
+        <a href="#" style="color: white;text-decoration: none;font-size: 30px;">Learn Cave</a>
+                <p class="smallText">Learn Cave helps you to get close to your dreams of programming world. Learn Cave is one of the best online coding Learning/Competition platform for programmers in whole wide world. Beginner's who want to learn coding and programming are too joining us.</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyRight">
+        <p class="smallText">&#169; Created By Learn Cave 2023</p>
+    </div>
+    <script src="js/Course-js/script.js"></script>
+</body>
+</html>
